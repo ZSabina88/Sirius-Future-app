@@ -1,0 +1,27 @@
+@use "./mixins.scss" as *;
+
+.next {
+    @include container(250px, none);
+    @include font(inherit, 400, 1.25rem);
+    background-color: #FFF1CB;
+
+
+    & div {
+        @include flex(column, center);
+        width: 70%;
+        align-items: center;
+        margin: 0 auto;
+
+        & p{
+            text-align: center;
+        }
+
+        & button {
+            width: 100%;
+            height: 48px;
+            border: 2px dashed var(--primary-clr);
+            border-radius: 30px;
+            background-color: transparent;
+        }
+    }
+}

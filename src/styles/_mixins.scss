@@ -19,6 +19,14 @@
     justify-content: $justify-content;
   }
 
+  @mixin container($height, $border){
+    width: 100%;
+    height: fit-content;
+    min-height: $height;
+    border-radius: 30px;
+    border: $border;
+  }
+
   @mixin breakpoint($point) {
     @if $point == small {
       @media (max-width: 400px) { @content; }

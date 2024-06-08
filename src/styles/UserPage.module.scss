@@ -1,0 +1,9 @@
+@use "./mixins.scss" as *;
+
+.someContent{
+    @include container(250px, none);
+    background-color: #E8CBFF;
+    @include flex(column, center);
+    align-items: center;
+
+}

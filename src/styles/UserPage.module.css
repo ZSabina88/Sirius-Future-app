@@ -1,0 +1,16 @@
+.someContent {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 250px;
+  border-radius: 30px;
+  border: none;
+  background-color: #E8CBFF;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+}/*# sourceMappingURL=UserPage.module.css.map */

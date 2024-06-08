@@ -1,0 +1,28 @@
+@use "./mixins.scss" as *;
+
+.discount{
+    background-color: var(--primary-clr);
+    @include container(250px, none);
+    @include font(inherit, 400, 2rem);
+    padding-top: 55px;
+    position: relative;
+    overflow: hidden;
+
+    & p{
+        width: 60%;
+        padding-left: 40px;
+        margin: 0 0 12px 0;
+    }
+
+    & img{
+        height: 100%;
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.discount p:nth-child(2){
+    @include font(inherit, 400, 1rem);
+}

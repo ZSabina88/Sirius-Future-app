@@ -1,0 +1,33 @@
+.discount {
+  background-color: var(--primary-clr);
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 250px;
+  border-radius: 30px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 55px;
+  position: relative;
+  overflow: hidden;
+}
+.discount p {
+  width: 60%;
+  padding-left: 40px;
+  margin: 0 0 12px 0;
+}
+.discount img {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.discount p:nth-child(2) {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+}/*# sourceMappingURL=Discount.module.css.map */
