@@ -1,0 +1,46 @@
+.box {
+  width: 96%;
+  height: 130px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.box div {
+  width: 80%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 5px;
+}
+.box * {
+  margin: 0;
+}
+.box h4 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.box p {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 0.625rem;
+  text-align: left;
+}
+.box img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.box button {
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--fourth-clr);
+}/*# sourceMappingURL=FreeStudyBox.module.css.map */

@@ -1,0 +1,42 @@
+@use "./mixins.scss" as *;
+
+.panel {
+    // width: 240px;
+    width: 25%;
+    background: var(--tertiary-clr);
+    min-height: 96%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 30px;
+    margin: 25px 0 0 10px;
+   
+    @include breakpoint(medium) {
+        width: 50px;
+    }
+
+    @include breakpoint(small) {
+        width: 50px;
+    }
+
+
+}
+
+.panelItems {
+    @include flex(column, space-between);
+    align-items: center;
+
+    & img {
+        margin: 40px auto;
+    }
+
+    @include breakpoint(medium) {
+        width: 50px;
+        align-items: center;
+        // gap: 80px;
+    }
+
+    @include breakpoint(small) {
+        width: 50px;
+        align-items: center;
+    }
+}

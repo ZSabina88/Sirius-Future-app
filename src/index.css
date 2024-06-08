@@ -1,0 +1,60 @@
+:root {
+  font-family: "Tsukimi Rounded", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--primary-text-clr);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-clr: #7362BC;
+  --secondary-clr: #DECFFF;
+  --tertiary-clr: #EEEEFF;
+  --fourth-clr: #D8ECFF;
+
+  --primary-text-clr: #323854;
+  --link-text-clr: #008AFF;
+  --placeholder-gray: #79747F;
+  --nav-text-clr: #434B74;
+  --border-clr: #ECECEC;
+  --btn-clr: #8D7FC7;
+
+  --primary-calendar-clr: #BBE7B9;
+  --secondary-calendar-clr: #DECFFF;
+  --tertiary-calendar-clr: #C8C5CD;
+
+  --wallet-red-clr: #E12828;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.pageError {
+  margin: 50px auto 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}

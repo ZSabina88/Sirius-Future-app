@@ -1,0 +1,39 @@
+@use "./mixins.scss" as *;
+
+.container {
+    width: 340px;
+    min-height: 535px;
+    height: fit-content;
+    margin: 15% auto 0 auto;
+    overflow: visible;
+
+    & img {
+        margin: 0 auto 30px 130px;
+    }
+
+    & label {
+        @include font(inherit, 400, 0.75rem);
+    }
+}
+
+.checkboxInput {
+    @include grid(30px 1fr, baseline);
+    gap: 10px;
+}
+
+.linkAlign {
+    @include grid(1fr 1fr, space-between);
+}
+
+.lastChild{
+    @include flex(column, center);
+    align-items: center;
+    margin-top: 40px;
+    
+
+    & *{
+        margin: 0;
+        @include font(inherit, 400, 1rem);
+    }
+
+}

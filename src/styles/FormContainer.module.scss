@@ -1,0 +1,27 @@
+@use "./mixins.scss" as *;
+
+.formContainer {
+    width: 100%;
+    @include flex(column, center);
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+
+    & form {
+        @include flex(column, center);
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+
+        & a{
+            @include font(inherit, 400, 1rem);
+            color: var(--link-text-clr);
+        }
+    }
+
+    & h2 {
+        @include font(inherit, 400, 2.15rem);
+        margin: 0;
+        padding: 1px;
+    }
+}

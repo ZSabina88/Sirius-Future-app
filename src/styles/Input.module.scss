@@ -1,0 +1,22 @@
+@use "./mixins.scss" as *;
+
+.wrapper {
+    @include flex(column, center);
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+.input {
+    width: 96%;
+    height: 3rem;
+    border: 1px solid var(--border-clr);
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}

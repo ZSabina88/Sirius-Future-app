@@ -1,0 +1,46 @@
+.container {
+  width: 340px;
+  min-height: 535px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 15% auto 0 auto;
+  overflow: visible;
+}
+.container img {
+  margin: 0 auto 30px 130px;
+}
+.container label {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.checkboxInput {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  justify-content: baseline;
+  gap: 10px;
+}
+
+.linkAlign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.lastChild {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  margin-top: 40px;
+}
+.lastChild * {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+}/*# sourceMappingURL=Login.module.css.map */

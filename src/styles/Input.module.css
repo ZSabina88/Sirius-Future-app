@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+.input {
+  width: 96%;
+  height: 3rem;
+  border: 1px solid var(--border-clr);
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}/*# sourceMappingURL=Input.module.css.map */

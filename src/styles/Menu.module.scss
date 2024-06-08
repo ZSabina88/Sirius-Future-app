@@ -1,0 +1,52 @@
+@use "./mixins.scss" as *;
+
+.nav {
+
+    cursor: pointer;
+    @include grid(30px 1fr, baseline);
+    @include font(inherit, 400, 1rem);
+    align-items: center;
+
+    @include breakpoint(medium) {
+        @include grid(20px, center);
+    }
+
+    @include breakpoint(small) {
+        @include grid(20px, center);
+    }
+
+}
+
+.navList {
+    align-items: center;
+    padding: 0;
+
+    & li {
+        @include flex(row, space-between);
+        list-style: none;
+        height: 40px;
+        align-items: center;
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--nav-text-clr);
+        height: fit-content;
+        height: 24px; 
+    }
+
+}
+
+.navList a:hover {
+    color: var(--primary-clr);
+}
+
+.navText {
+    @include breakpoint(medium) {
+        display: none;
+    }
+
+    @include breakpoint(small) {
+        display: none;
+    }
+}
