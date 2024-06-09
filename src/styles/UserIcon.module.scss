@@ -1,0 +1,11 @@
+@use "./mixins.scss" as *;
+
+.userIcon{
+    width: 50px;
+    margin: 0;
+    @include container(50px, 1px solid var(--primary-clr), 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

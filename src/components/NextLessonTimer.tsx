@@ -1,6 +1,6 @@
-import classes from "../styles/NextLesson.module.scss";
+import classes from "../styles/NextLessonTimer.module.scss";
 
-const NextLesson: React.FC = () => {
+const NextLessonTimer: React.FC = () => {
     return (
         <article className={classes.next}>
             <div>
@@ -12,4 +12,4 @@ const NextLesson: React.FC = () => {
     );
 }
 
-export default NextLesson;
+export default NextLessonTimer;

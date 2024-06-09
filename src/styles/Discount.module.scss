@@ -2,7 +2,7 @@
 
 .discount{
     background-color: var(--primary-clr);
-    @include container(250px, none);
+    @include container(250px, none, 30px);
     @include font(inherit, 400, 2rem);
     padding-top: 55px;
     position: relative;

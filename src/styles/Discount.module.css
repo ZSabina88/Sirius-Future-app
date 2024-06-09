@@ -1,8 +1,5 @@
 .discount {
   background-color: var(--primary-clr);
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
   min-height: 250px;
   border-radius: 30px;
   border: none;

@@ -1,5 +1,5 @@
 .panel {
-  width: 25%;
+  width: 240px;
   background: var(--tertiary-clr);
   min-height: 96%;
   position: absolute;

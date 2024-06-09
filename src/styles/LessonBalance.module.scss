@@ -1,0 +1,46 @@
+@use "./mixins.scss" as *;
+
+.lessonBalance {
+    @include container(370px, 1px solid var(--primary-clr), 30px);
+    padding: 30px 5px 30px 30px;
+
+    & h3 {
+        @include font(inherit, 400, 1.5rem);
+    }
+
+
+}
+
+.lessonBalance button:last-child{
+    @include container(40px, 1px solid var(--primary-clr), 30px);
+    @include flex(column, center);
+    align-items: center;
+    width: 70%;
+    background-color: var(--btn-clr);
+}
+
+.tableSection {
+
+    height: 45%;
+    @include flex(column, baseline);
+    // overflow: scroll;
+    // scrollbar-color: red;
+    // scrollbar-gutter: stable;
+    // overflow-x: hidden;
+    margin-bottom: 35px;
+
+    & * {
+        width: 100%;
+    }
+
+    & div:first-child:hover {
+        background-color: var(--secondary-clr);
+    }
+}
+
+.tableSection p:nth-child(1),
+.tableSection p:nth-child(4),
+.tableSection p:nth-child(5),
+.tableSection div:last-child {
+    display: none;
+}

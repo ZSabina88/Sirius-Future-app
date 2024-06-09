@@ -1,8 +1,8 @@
 @use "./mixins.scss" as *;
 
 .panel {
-    // width: 240px;
-    width: 25%;
+    width: 240px;
+    // width: 25%;
     background: var(--tertiary-clr);
     min-height: 96%;
     position: absolute;

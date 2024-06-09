@@ -1,4 +1,4 @@
-import classes from "../styles/Input.module.scss";
+import classes from "../../styles/Input.module.scss";
 
 type Input = {
     name: string,

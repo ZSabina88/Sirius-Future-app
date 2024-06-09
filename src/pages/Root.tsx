@@ -5,7 +5,7 @@ const RootLayout: React.FC = () => {
   return (
     <>
       <MainNavigation />
-      <main style={{marginLeft: "25%"}}>
+      <main>
         <Outlet />
       </main>
     </>

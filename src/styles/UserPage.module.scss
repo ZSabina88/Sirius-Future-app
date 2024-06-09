@@ -1,9 +1,26 @@
 @use "./mixins.scss" as *;
 
-.someContent{
-    @include container(250px, none);
+.someContent {
+    @include container(250px, none, 30px);
     background-color: #E8CBFF;
     @include flex(column, center);
     align-items: center;
 
+}
+
+.content {
+    @include flex(column, center);
+    gap: 20px;
+    padding: 20px;
+}
+
+.contentFirstElem {
+    @include grid(500px 340px 1fr, center);
+    gap: 10px;
+    height: 100%;
+}
+
+.contentSecondElem{
+    @include grid( 300px 2fr, center);
+    gap: 10px;
 }

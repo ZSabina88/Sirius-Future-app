@@ -1,0 +1,93 @@
+.userMenu {
+  width: 250px;
+  background-color: #fff;
+  z-index: 2;
+  padding: 30px;
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  min-height: 265px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-clr);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: baseline;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 10px;
+}
+.userMenu p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.userMenu div {
+  width: 85%;
+  min-height: 50px;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  justify-content: baseline;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 8px;
+}
+.userMenu div p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.userMenu div:hover {
+  background-color: #EEEEFF;
+}
+
+.img1 {
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/avatar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/avatar1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arrowIcon {
+  position: absolute;
+  top: 75px;
+  right: 80px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.exit {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.exit button {
+  color: var(--link-text-clr);
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+}/*# sourceMappingURL=UserMenu.module.css.map */

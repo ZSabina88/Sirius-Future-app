@@ -1,4 +1,4 @@
-import classes from "../styles/Button.module.scss";
+import classes from "../../styles/Button.module.scss";
 
 type Button = {
     text: string,

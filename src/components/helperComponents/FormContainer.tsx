@@ -1,4 +1,4 @@
-import classes from "../styles/FormContainer.module.scss";
+import classes from "../../styles/FormContainer.module.scss";
 
 type Props = {
     title: string,

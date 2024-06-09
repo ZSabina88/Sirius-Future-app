@@ -19,11 +19,9 @@
     justify-content: $justify-content;
   }
 
-  @mixin container($height, $border){
-    width: 100%;
-    height: fit-content;
+  @mixin container($height, $border, $borRadius){
     min-height: $height;
-    border-radius: 30px;
+    border-radius: $borRadius;
     border: $border;
   }
 

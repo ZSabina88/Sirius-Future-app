@@ -1,7 +1,4 @@
 .next {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
   min-height: 250px;
   border-radius: 30px;
   border: none;
@@ -9,6 +6,7 @@
   font-weight: 400;
   font-size: 1.25rem;
   background-color: #FFF1CB;
+  padding: 30px 0;
 }
 .next div {
   display: flex;
@@ -30,4 +28,4 @@
   border: 2px dashed var(--primary-clr);
   border-radius: 30px;
   background-color: transparent;
-}/*# sourceMappingURL=NextLesson.module.css.map */
+}/*# sourceMappingURL=NextLessonTimer.module.css.map */

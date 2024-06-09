@@ -1,9 +1,6 @@
 import classes from "../styles/Discount.module.scss";
 import cosmonaut from "../assets/SF_2 1.png";
 
-// type Container ={
-//     children: React.ReactNode
-// }
 
 const Discount: React.FC = () => {
   return (

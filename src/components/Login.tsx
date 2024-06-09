@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from "../styles/Login.module.scss";
 import logo from "../assets/Logomark_1_.png";
-import FormContainer from './FormContainer';
-import Input from './Input';
-import PasswordInput from './PasswordInput';
-import Button from './Button';
+import FormContainer from './helperComponents/FormContainer';
+import Input from './helperComponents/Input';
+import PasswordInput from './helperComponents/PasswordInput';
+import Button from './helperComponents/Button';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import { useState } from 'react';

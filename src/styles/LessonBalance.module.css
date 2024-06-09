@@ -1,0 +1,50 @@
+.lessonBalance {
+  min-height: 370px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-clr);
+  padding: 30px 5px 30px 30px;
+}
+.lessonBalance h3 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.lessonBalance button:last-child {
+  min-height: 40px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-clr);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  width: 70%;
+  background-color: var(--btn-clr);
+}
+
+.tableSection {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: baseline;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+.tableSection * {
+  width: 100%;
+}
+.tableSection div:first-child:hover {
+  background-color: var(--secondary-clr);
+}
+
+.tableSection p:nth-child(1),
+.tableSection p:nth-child(4),
+.tableSection p:nth-child(5),
+.tableSection div:last-child {
+  display: none;
+}/*# sourceMappingURL=LessonBalance.module.css.map */

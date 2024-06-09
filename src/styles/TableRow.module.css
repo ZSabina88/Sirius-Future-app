@@ -1,0 +1,109 @@
+.tablerow {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  padding: 10px 0;
+}
+.tablerow p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  align-items: center;
+}
+
+.tablerow p:nth-child(3) {
+  background-color: var(--tertiary-clr);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.buttondiv {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.date {
+  width: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.date span:first-child {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.8rem;
+  display: inline-flex;
+}
+
+.date span:last-child {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.tableAlignNext {
+  display: grid;
+  grid-template-columns: 50px 200px 70px 130px 2fr;
+  justify-content: center;
+  gap: 7px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  gap: 2px;
+}
+
+.user span:first-child {
+  padding-top: 3px;
+}
+
+.buttondiv {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  gap: 8px;
+  overflow: visible;
+}
+.buttondiv button {
+  min-height: 32px;
+  border-radius: 15px;
+  border: 1px solid var(--primary-clr);
+  background-color: white;
+}
+.buttondiv button:last-child {
+  min-height: 32px;
+  border-radius: 15px;
+  border: 1px solid var(--primary-clr);
+  background-color: var(--btn-clr);
+}/*# sourceMappingURL=TableRow.module.css.map */

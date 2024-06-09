@@ -1,0 +1,48 @@
+.nextLesson {
+  min-height: 370px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-clr);
+  padding: 30px 5px 30px 30px;
+}
+.nextLesson h3 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.nextLesson button:nth-child(3) {
+  min-height: 40px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-clr);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  width: 60%;
+  background-color: var(--btn-clr);
+}
+
+.table {
+  height: 45%;
+  margin-bottom: 35px;
+}
+
+.table p:nth-child(3) {
+  display: none;
+}
+
+.table p:nth-child(2) {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 3px;
+}
+
+.table p:nth-child(4),
+p:nth-child(5) {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 0.7rem;
+}/*# sourceMappingURL=NextLessons.module.css.map */

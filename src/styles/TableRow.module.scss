@@ -1,0 +1,77 @@
+@use "./mixins.scss" as *;
+
+.tablerow {
+    border-bottom: 1px solid #ddd;
+    @include flex(row, center);
+    align-items: center;
+    padding: 10px 0;
+
+    & p {
+        @include font(inherit, 400, 1rem);
+        margin: 0;
+        align-items: center;
+    }
+}
+
+.tablerow p:nth-child(3) {
+    background-color: var(--tertiary-clr);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    @include flex(column, center);
+}
+
+
+.buttondiv {
+    @include flex(column, center);
+}
+
+.date {
+    width: 30px;
+    height: fit-content;
+    @include flex(column, center);
+    align-items: center;
+    padding: 0 15px;
+}
+
+.date span:first-child {
+    @include font(inherit, 400, 1.8rem);
+    display: inline-flex;
+
+}
+
+.date span:last-child {
+    @include font(inherit, 400, 0.75rem);
+
+}
+
+.tableAlignNext {
+    @include grid(50px 200px 70px 130px 2fr, center);
+    gap: 7px;
+}
+
+.user {
+    @include flex(row, center);
+    align-items: center;
+    gap: 2px;
+}
+
+.user span:first-child {
+    padding-top: 3px;
+
+}
+
+.buttondiv{
+    @include grid(50% 50%, center);
+    gap: 8px;
+    overflow: visible;
+
+    & button{
+        @include  container(32px, 1px solid var(--primary-clr), 15px);
+        background-color: white;
+    }
+    & button:last-child{
+        @include  container(32px, 1px solid var(--primary-clr), 15px);
+        background-color: var(--btn-clr);
+    }
+}

@@ -1,0 +1,75 @@
+@use "./mixins.scss" as *;
+
+.userMenu {
+    width: 250px;
+    background-color: #fff;
+    z-index: 2;
+    padding: 30px;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    @include container(265px, 1px solid var(--primary-clr), 12px);
+    @include flex(column, baseline);
+    gap: 10px;
+
+    & p {
+        @include font(inherit, 400, 1rem);
+    }
+
+    & div {
+        width: 85%;
+        @include container(50px, none, 12px);
+        @include flex(row, baseline);
+        align-items: center;
+        gap: 20px;
+        padding: 5px 8px;
+
+        & p {
+            @include font(inherit, 400, 0.75rem);
+        }
+    }
+
+    & div:hover{
+        background-color: #EEEEFF;
+    }
+}
+
+.img1 {
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/avatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/avatar1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrowIcon{
+    position: absolute;
+    top: 75px;
+    right: 80px;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.exit{
+    @include flex(row, space-between);
+
+    & button{
+        color: var(--link-text-clr);
+        border: none;
+        background-color: transparent;
+        @include font(inherit, 400, 1rem);
+    }
+}

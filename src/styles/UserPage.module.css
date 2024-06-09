@@ -1,7 +1,4 @@
 .someContent {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
   min-height: 250px;
   border-radius: 30px;
   border: none;
@@ -13,4 +10,30 @@
   margin: 0 auto;
   overflow: hidden;
   align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contentFirstElem {
+  display: grid;
+  grid-template-columns: 500px 340px 1fr;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.contentSecondElem {
+  display: grid;
+  grid-template-columns: 300px 2fr;
+  justify-content: center;
+  gap: 10px;
 }/*# sourceMappingURL=UserPage.module.css.map */
