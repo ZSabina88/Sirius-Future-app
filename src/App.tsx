@@ -7,6 +7,7 @@ import ErrorPage from "./pages/Error";
 import ForgotPassword from "./components/ForgotPassword";
 import Login from "./components/Login";
 import UserPage from "./components/UserPage";
+import TimeTable from "./components/TimeTable";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "/forgotpassword", element: <ForgotPassword /> },
       { path: "/userpage", element: <UserPage /> },
+      { path: "/расписание", element: <TimeTable /> },
 
 
     ]

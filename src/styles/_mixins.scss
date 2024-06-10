@@ -19,6 +19,12 @@
     justify-content: $justify-content;
   }
 
+  @mixin gridRow($temp-row, $justify-content) {
+    display: grid;
+    grid-template-columns: $temp-row;
+    justify-content: $justify-content;
+  }
+
   @mixin container($height, $border, $borRadius){
     min-height: $height;
     border-radius: $borRadius;

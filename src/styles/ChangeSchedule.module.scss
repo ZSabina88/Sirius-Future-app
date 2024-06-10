@@ -1,0 +1,46 @@
+@use "./mixins.scss" as *;
+
+.schedule{
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    min-height: 250px;
+    border: 1px solid var(--secondary-clr);
+    border-radius: 10px;
+    margin: 80px auto 0;
+    z-index: 4;
+    background-color: #fff;
+    
+    & form{
+        padding: 35px 20px 0 20px;
+        @include flex(column, center);
+        gap: 15px;
+
+        & input{
+            width: 95%;
+            @include container(32px, 1px solid var(--primary-clr), 15px);
+            
+        }
+
+        & button{
+            @include container(32px, none, 15px);
+            background-color: var(--secondary-clr);
+            width: 95%;
+        }
+    }
+}
+
+.schedule::backdrop {
+    background: hsl(0 0% 0% / 30%);
+}
+
+.icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.position{
+    position: absolute;
+}

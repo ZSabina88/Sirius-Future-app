@@ -21,11 +21,6 @@
     @include flex(column, center);
 }
 
-
-.buttondiv {
-    @include flex(column, center);
-}
-
 .date {
     width: 30px;
     height: fit-content;
@@ -65,9 +60,10 @@
     @include grid(50% 50%, center);
     gap: 8px;
     overflow: visible;
+    padding: 5px;
 
     & button{
-        @include  container(32px, 1px solid var(--primary-clr), 15px);
+        @include  container(20px, 1px solid var(--primary-clr), 15px);
         background-color: white;
     }
     & button:last-child{
