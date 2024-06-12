@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './helperComponents/Button';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../hooks/hook";
 import { addEntry } from "../features/ScheduleSlice";
 import { v4 as uuidv4 } from "uuid";

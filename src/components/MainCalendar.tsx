@@ -13,7 +13,7 @@ const weekdays = [{ id: 1, day: "Пн" }, { id: 2, day: "Вт" }, { id: 3, day: 
 
 const MainCalendar: React.FC = () => {
   const [showEditPage, setShowEditPage] = useState(false);
-  const [currentMonth, setCurrentmonth] = useState(getMonth());
+  const [currentMonth] = useState(getMonth());
 
   const handleClick = () => {
     setShowEditPage(true);
