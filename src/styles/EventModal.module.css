@@ -1,0 +1,38 @@
+.schedule form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 15px;
+}
+.schedule form input {
+  width: 95%;
+  min-height: 32px;
+  border-radius: 15px;
+  border: 1px solid var(--primary-clr);
+}
+.schedule form button {
+  min-height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--secondary-clr);
+  width: 95%;
+}
+.schedule form select {
+  min-height: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--primary-clr);
+  padding: 7px;
+}
+.schedule form select:focus {
+  border: 2px solid var(--primary-clr);
+}
+
+.icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}/*# sourceMappingURL=EventModal.module.css.map */

@@ -1,23 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addMonths, subMonths } from 'date-fns';
+import dayjs from "dayjs";
 
 const initialState = {
-    currentDate: new Date(),
+    monthIndex: dayjs().month(),
+    smallCalendarMonth: null,
+    daySelected: dayjs(),
+    selectedEvent: null,
 };
 
 const calendarSlice = createSlice({
     name: 'calendar',
     initialState,
     reducers: {
-        nextMonth: (state) => {
-            state.currentDate = addMonths(state.currentDate, 1);
+        setMonthIndex: (state, action) => {
+            state.monthIndex = action.payload;
         },
-        prevMonth: (state) => {
-            state.currentDate = subMonths(state.currentDate, 1);
+        setSmallCalendarMonth: (state, action) => {
+            state.smallCalendarMonth = action.payload;
+        },
+        setDaySelected: (state, action) => {
+            state.daySelected = action.payload;
+        },
+        setSelectedEvent: (state, action) => {
+            state.selectedEvent = action.payload;
         },
     },
 });
 
-export const { nextMonth, prevMonth } = calendarSlice.actions;
+export const { setMonthIndex, setDaySelected, setSmallCalendarMonth, setSelectedEvent } = calendarSlice.actions;
 
 export default calendarSlice;

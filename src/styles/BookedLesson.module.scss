@@ -1,4 +1,22 @@
+@use "./mixins.scss" as *;
+
+
 .schedule{
-    width: 97%;
-    height: 34px
+    @include grid( 1fr 1fr, baseline);
+    align-items: baseline;
+    width: 90%;
+    height: fit-content;
+    background-color: aqua;
+    padding: 3px;
+    @include font(inherit, 400, 0.5rem);
+    // margin: 2px 2px;
+    overflow: auto;
+    line-height: 1.2;
+    border-radius: 2px;
+
+    & * {
+
+        margin: 0;;
+    }
+
 }

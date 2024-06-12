@@ -1,0 +1,49 @@
+.schedule {
+  position: relative;
+  overflow: hidden;
+  width: 50vw;
+  min-height: 250px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid var(--secondary-clr);
+  border-radius: 10px;
+  margin: 80px auto 0;
+  z-index: 4;
+  background-color: #fff;
+  padding: 30px 20px;
+}
+.schedule form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 15px;
+}
+.schedule form input {
+  width: 95%;
+  min-height: 32px;
+  border-radius: 15px;
+  border: 1px solid var(--primary-clr);
+}
+.schedule form button {
+  min-height: 32px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--secondary-clr);
+  width: 95%;
+}
+
+.icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.position {
+  position: absolute;
+  top: 20px;
+  left: 130px;
+}/*# sourceMappingURL=ChangeSchedule.module.css.map */

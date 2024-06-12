@@ -24,4 +24,9 @@
         margin: 0;
         padding: 1px;
     }
+    & button {
+        @include container(48px, none, 15px);
+            background-color: var(--btn-clr);
+            width: 99%;
+    }
 }

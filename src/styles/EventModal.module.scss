@@ -1,17 +1,7 @@
 @use "./mixins.scss" as *;
 
 .schedule{
-    position: relative;
-    overflow: hidden;
-    width: 50vw;
-    min-height: 250px;
-    height: fit-content;
-    border: 1px solid var(--secondary-clr);
-    border-radius: 10px;
-    margin: 80px auto 0;
-    z-index: 4;
-    background-color: #fff;
-    padding: 30px 20px ;
+    // width: 50vw;
     
     & form{
         @include flex(column, center);
@@ -24,9 +14,17 @@
         }
 
         & button{
-            @include container(32px, none, 15px);
+            @include container(40px, none, 15px);
             background-color: var(--secondary-clr);
             width: 95%;
+        }
+
+        & select {
+            @include container(40px, 1px solid var(--primary-clr), 15px);
+            padding: 7px;
+        }
+        & select:focus {
+            border: 2px solid var(--primary-clr);
         }
     }
 }
@@ -40,8 +38,9 @@
     cursor: pointer;
 }
 
-.position{
-    position: absolute;
-    top: 20px;
-    left: 130px;
-}
+// .eventPosition{
+//     z-index: 10;
+//     position: absolute;
+//     top: 20px;
+//     left: 100px;
+// }

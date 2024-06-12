@@ -1,0 +1,20 @@
+.schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: baseline;
+  align-items: baseline;
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: aqua;
+  padding: 3px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.5rem;
+  overflow: auto;
+  line-height: 1.2;
+  border-radius: 2px;
+}
+.schedule * {
+  margin: 0;
+}/*# sourceMappingURL=BookedLesson.module.css.map */

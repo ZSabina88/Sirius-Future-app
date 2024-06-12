@@ -6,7 +6,7 @@ const store = configureStore({
     reducer: {
         calendar: calendarSlice.reducer,
         schedule: scheduleSlice.reducer
-    }
+    },
 });
 
 export default store;

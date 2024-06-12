@@ -1,0 +1,38 @@
+.mainCalendar {
+  width: 94vw;
+  position: relative;
+}
+
+.editsect {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  width: 95%;
+}
+.editsect button {
+  width: 345px;
+  min-height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--secondary-clr);
+}
+.editsect select {
+  width: 255px;
+  padding: 10px;
+  min-height: 36px;
+  border-radius: 8px;
+  border: 1px solid #ECECEC;
+}
+.editsect select:focus {
+  border: 1px solid var(--secondary-clr);
+}
+
+.position {
+  position: absolute;
+  top: 20px;
+  left: 25%;
+}/*# sourceMappingURL=MainCalendar.module.css.map */

@@ -13,7 +13,7 @@ const MainNavigation: React.FC = () => {
     }
     const iconPosition = !show ? "burger-icon-close" : "burger-icon-open";
     return (
-        <>
+        <aside>
             <div className={iconPosition}>
                 <GiHamburgerMenu size={25} color='#7362BC' onClick={handleClick} />
             </div>
@@ -25,7 +25,7 @@ const MainNavigation: React.FC = () => {
                         <FreeStudyBox />
                     </div>
                 </div>}
-        </>
+        </aside>
     );
 }
 

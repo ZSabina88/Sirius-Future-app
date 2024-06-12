@@ -2,6 +2,7 @@
 
 .header {
     @include flex(row, space-between);
+    
 
     & p {
         margin: 0;

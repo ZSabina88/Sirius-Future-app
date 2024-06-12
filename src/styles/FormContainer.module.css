@@ -33,4 +33,11 @@
   font-size: 2.15rem;
   margin: 0;
   padding: 1px;
+}
+.formContainer button {
+  min-height: 48px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--btn-clr);
+  width: 99%;
 }/*# sourceMappingURL=FormContainer.module.css.map */

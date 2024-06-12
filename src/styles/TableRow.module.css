@@ -30,15 +30,6 @@
   overflow: hidden;
 }
 
-.buttondiv {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
-  justify-content: center;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .date {
   width: 30px;
   height: -moz-fit-content;
@@ -94,9 +85,10 @@
   justify-content: center;
   gap: 8px;
   overflow: visible;
+  padding: 5px;
 }
 .buttondiv button {
-  min-height: 32px;
+  min-height: 20px;
   border-radius: 15px;
   border: 1px solid var(--primary-clr);
   background-color: white;
