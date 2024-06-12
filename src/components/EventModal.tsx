@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './helperComponents/Button';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../hooks/hook";
 import { addEntry } from "../features/ScheduleSlice";
 import { v4 as uuidv4 } from "uuid";
@@ -12,9 +12,22 @@ interface ICardModal {
 }
 
 const EventModal: React.FC<ICardModal> = ({ onClose }) => {
-    const [subject, setSubject] = useState('');
+    const [subject, setSubject] = useState<string | null | any>('');
     const [time, setTime] = useState('');
+    // const [eachSubject, setEachSubject] = useState<string | null | [] | any>("");
     const dispatch = useAppDispatch();
+
+    // const events = useAppSelector((state) => state.schedule.events);
+
+
+    // useEffect(() => {
+    //     if (subject) {
+    //         const subjectEvents = events.filter((event) => event.subject === subject);
+    //         setEachSubject(subjectEvents);
+    //     } else {
+    //         setEachSubject(events);
+    //     }
+    // }, [subject, events]);
 
     const daySelected = useAppSelector((state) => state.calendar.daySelected);
     const [date, setDate] = useState(daySelected.format("dddd, MMMM DD"));
@@ -27,11 +40,11 @@ const EventModal: React.FC<ICardModal> = ({ onClose }) => {
         setTime('');
         onClose && onClose();
     };
-    { }
+
+
 
     return (
         <section className={classes.schedule}>
-        {/* <section > */}
             <p className={classes.icon} onClick={onClose}><IoClose color="#7362BC" /></p>
             <form onSubmit={handleSubmit}>
                 <p>{date}</p>

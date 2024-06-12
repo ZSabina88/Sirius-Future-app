@@ -6,7 +6,7 @@
   width: 90%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: aqua;
+  background-color: var(--primary-calendar-clr);
   padding: 3px;
   font-family: inherit;
   font-weight: 400;
@@ -14,7 +14,15 @@
   overflow: auto;
   line-height: 1.2;
   border-radius: 2px;
+  position: relative;
 }
 .schedule * {
   margin: 0;
+}
+
+.walletIcon {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  color: var(--wallet-red-clr);
 }/*# sourceMappingURL=BookedLesson.module.css.map */

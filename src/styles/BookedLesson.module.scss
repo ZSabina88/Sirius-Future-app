@@ -6,17 +6,23 @@
     align-items: baseline;
     width: 90%;
     height: fit-content;
-    background-color: aqua;
+    background-color: var( --primary-calendar-clr);
     padding: 3px;
     @include font(inherit, 400, 0.5rem);
-    // margin: 2px 2px;
     overflow: auto;
     line-height: 1.2;
     border-radius: 2px;
+    position: relative;
 
     & * {
 
         margin: 0;;
     }
+}
 
+.walletIcon{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    color: var( --wallet-red-clr);
 }

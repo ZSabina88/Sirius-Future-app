@@ -44,9 +44,14 @@ const scheduleSlice = createSlice({
                 state.events[index] = action.payload;
             }
         },
+        deleteEvent: (state, action) => {
+            state.events = state.events.filter(event => event.id !== action.payload.id);
+
+
+          },
     },
 });
 
-export const { addEntry, editEntry } = scheduleSlice.actions;
+export const { addEntry, editEntry, deleteEvent } = scheduleSlice.actions;
 
 export default scheduleSlice;
